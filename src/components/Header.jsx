@@ -1,0 +1,31 @@
+import { Typography, Box, useTheme } from "@mui/material";
+import { tokens } from "../theme";
+import React from "react";
+
+const Header = ({ title, subtitle,isVisible  }) => {
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
+
+
+
+  if (!isVisible) {
+    return null; // If isVisible is false, the component will not be rendered
+  }
+  return (
+    <Box mb="30px">
+      <Typography
+        variant="h2"
+        color={colors.grey[100]}
+        fontWeight="bold"
+        sx={{ m: "0 0 5px 0" }}
+      >
+        {title}
+      </Typography>
+      <Typography variant="h5" color={colors.greenAccent[400]}>
+        {subtitle}
+      </Typography>
+    </Box>
+  );
+};
+
+export default Header;

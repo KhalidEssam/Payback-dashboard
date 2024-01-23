@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "@babel/preset-env", // Enables modern JavaScript features
+    "@babel/preset-react" // Transforms JSX syntax
+  ],
+  "plugins": [
+    "@babel/plugin-transform-optional-chaining",
+    "@babel/plugin-transform-nullish-coalescing-operator"
+    // Add other plugins or additional configurations as needed
+  ]
+}

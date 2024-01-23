@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
 
 .App-logo {
   height: 40vmin;
@@ -12,7 +16,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.custom-table {
+  background-color: #11198e;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,6 +28,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.Sidebar-Icon{
+  font-size: 8rem;
+  transition: all 500ms ease;
+}
+.Sidebar-Icon:hover{
+  transform: rotate(6.29rad);
 }
 
 .App-link {

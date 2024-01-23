@@ -1,0 +1,11 @@
+.icons-dashboard{
+    /* font-size: 8rem; */
+    transition: all 500ms ease;
+}
+.icons-dashboard:hover{
+    transform: rotate(6.29rad);
+}
+.container{
+height: 100%;
+
+}
