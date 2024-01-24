@@ -18,7 +18,7 @@ const Chart = ({ XChart, Title, Subtitle }) => {
     className="m-2 p-2">
         <Header title={Title} subtitle={Subtitle }   />
         <Box>
-        <XChart />
+            <XChart />
         </Box>
     </Box>
 

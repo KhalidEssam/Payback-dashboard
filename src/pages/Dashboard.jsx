@@ -1,13 +1,14 @@
 
 import React from 'react';
-import Chart from './chart';
-import LineChart from "../components/linechart";
-import PieChart from '../components/PieChart';
-import BarChart from '../components/BarChart'
-import Invoice from "./Invoice/index";
-import Team from "./Team/index";
-import Contacts from './contacts/index';
+// import Chart from './chart';
+// import LineChart from "../components/linechart";
+// import PieChart from '../components/PieChart';
+// import BarChart from '../components/BarChart'
+// import Invoice from "./Invoice/index";
+// import Team from "./Team/index";
+// import Contacts from './contacts/index';
 import DashboardWidget from "../components/DashboardWidget";
+import AnalysisWidget from "../components/AnalysisWidget";
 
 const Dashboard = () => {
 
@@ -37,21 +38,21 @@ return (
             </div>
             
         </div>
-        <div className="col-12">
+        {/* <div className="col-12">
             <div className=" d-xl-flex d-block flex-wrap  overflow-auto">
-            {/* <div className="row row-cards m-2"> */}
+            
                 <Contacts headerIsVisible={true} rowNum={5}/>
                 <Invoice headerIsVisible={true} rowNum={5}/>
                 <Team headerIsVisible={true} rowNum={5}/>
             </div>
-        </div>
+        </div> */}
         
 
 
-        <div className="h3 d-block p-4">
+        {/* <div className="h3 d-block p-4">
                 Some of our interesting charts
-        </div>
-        <div className="col-12">
+        </div> */}
+        {/* <div className="col-12">
 
             <div className=" d-xl-flex d-block justify-content-center flex-wrap  " >
                 <Chart
@@ -70,8 +71,19 @@ return (
                     Subtitle="Simple Line Chart"
                 />
             </div>
-        </div>
+        </div> */}
 
+        <div className="col-12">
+            <div id="list_widgets" className="row row-cards m2 p-2" data-bb-toggle="widgets-list">
+            <AnalysisWidget id="widget_analytics_general" title="Site Analytics" columnWidth="widget-item col-12 d-flex"/>
+            <div className="mb-3 col-12"></div>
+            <AnalysisWidget id="widget_analytics_page" title="Top Most Visit Pages"  />
+            <AnalysisWidget id="widget_analytics_browser" title="Top Browsers" />
+            <div className="mb-3 col-12"></div>
+            <AnalysisWidget id="widget_analytics_referrer" title="Top Referrers" />
+            <AnalysisWidget id="widget_posts_recent" title="Recent Posts"  />
+            </div>
+    </div>
 
     </div>
     )

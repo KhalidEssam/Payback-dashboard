@@ -150,7 +150,7 @@ export const dummySidebarData = [
   },
   {
     title: 'Pages',
-    to: '/pages',
+    to: 'pages',
     icon: <LibraryBooksIcon />,
     optionsData: [
     ],
@@ -162,17 +162,17 @@ export const dummySidebarData = [
     optionsData: [
       {
         title: 'Posts',
-        to: 'blog/posts',
+        to: 'posts',
         icon: <TbPoint />,
       },
       {
         title: 'Categories',
-        to: 'blog/categories',
+        to: 'categories',
         icon: <TbPoint />,
       },
       {
         title: 'Tags',
-        to: 'blog/tags',
+        to: 'tags',
         icon: <TbPoint />,
       },
     ],
@@ -184,12 +184,12 @@ export const dummySidebarData = [
     optionsData: [
       {
         title: 'Transactions',
-        to: 'payments/transactions',
+        to: 'transactions',
         icon: <TbPoint />,
       },
       {
         title: 'Payment methods',
-        to: 'payments/methods',
+        to: 'methods',
         icon: <TbPoint />,
       },
     ],
@@ -220,8 +220,8 @@ export const dummySidebarData = [
     icon: <HelpIcon />,
     optionsData: [
       {
-        title: 'FAQs',
-        to: '/faqs',
+        title: 'FAQQs',
+        to: '/faqqs',
         icon: <TbPoint />,
       },
       {
@@ -260,12 +260,12 @@ export const dummySidebarData = [
       },
       {
         title: 'Location Importer',
-        to: '/locations/bulk-import',
+        to: '/bulk-import',
         icon: <TbPoint />,
       },
       {
         title: 'Location Exporter',
-        to: '/locations/export',
+        to: '/export',
         icon: <TbPoint />,
       },
     ],
@@ -299,22 +299,22 @@ export const dummySidebarData = [
       },
       {
         title: 'Theme Options',
-        to: '/theme/options',
+        to: '/options',
         icon: <TbPoint />,
       },
       {
         title: 'Custom CSS',
-        to: '/theme/custom-css',
+        to: '/custom-css',
         icon: <TbPoint />,
       },
       {
         title: 'Custom JS',
-        to: '/theme/custom-js',
+        to: '/custom-js',
         icon: <TbPoint />,
       },
       {
         title: 'Custom HTML',
-        to: '/theme/custom-html',
+        to: '/custom-html',
         icon: <TbPoint />,
       },
     ],
@@ -326,12 +326,12 @@ export const dummySidebarData = [
     optionsData: [
       {
         title: 'Installed Plugins',
-        to: '/plugins/installed',
+        to: '/installed',
         icon: <TbPoint />,
       },
       {
         title: 'Add New Plugin',
-        to: '/plugins/new',
+        to: '/new',
         icon: <TbPoint />,
       },
     ],

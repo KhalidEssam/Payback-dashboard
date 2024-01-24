@@ -8,17 +8,17 @@ import React from 'react';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
-const renderOptions = ({to, options, selected, setSelected, colors }) => {
+const renderOptions = ({title, to, options, selected, setSelected, colors }) => {
 return options && options.map((option) => (  
     <MenuItem
         key={option.title}
-        active={selected === option.title}
+        active={selected.includes(option.title)}
         style={{
         color: colors.grey[100],
         }}
         onClick={() => {
-        setSelected(option.title);
-        option.onClick && option.onClick(option.title);
+
+        setSelected(title+'/'+option.title);
         }}
         icon={option.icon}
     >
@@ -28,43 +28,47 @@ return options && options.map((option) => (
 ));
 };
 
-const Item = ({ title, to, icon, selected, setSelected, options }) => {
+const Item = ({ title, to, icon, selected, setSelected, options  }) => {
 const theme = useTheme();
 const colors = tokens(theme.palette.mode);
-// const [isOptionsVisible, setOptionsVisible] = useState(false);
-
 const handleItemClick = () => {
     title ===selected ? setSelected("") : setSelected(title);
+}       
 
-    // setSelected(title);
-}
 
 return (
 <>
     
     <MenuItem
-    active={selected === title}
+    active={selected.includes(title)}
     style={{
         color: colors.grey[100],
     }}
     onClick={handleItemClick}
     icon={icon}
     >
+        {options.length ===0 &&  <Link to={to} />}
         <Box display="flex" alignItems="center">
         <Typography>{title}</Typography>
-
         {options && options.length > 0 && <ExpandMoreIcon style={{ color: colors.grey[100], marginLeft: "auto" }} />}
         </Box>
 
-    <Link to={to} />
+
     </MenuItem>
+
     
 
-
-    {selected.includes(title) && options && (
-
+    {( selected.includes(title)) && options.length>0 && (
+    
     <Box paddingLeft= "10%">
+        {console.log('title :'+ title)} 
+        {console.log('selected :'+ selected)} 
+        {console.log(selected.includes(title))}
+
+        {console.log('-------------------------------')}
+
         {renderOptions({
+        title,
         to,
         options,
         selected,
@@ -72,7 +76,9 @@ return (
         colors,
         })}
     </Box>
-    )}
+    ) }
+
+    {/* {!child.includes(to) && setchild("")} */}
 
 </>
 );

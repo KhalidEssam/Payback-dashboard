@@ -49,7 +49,7 @@ const PieChart = () => {
   };
 
   return (
-    <div className='chart-container justify-content-center' style={{ position: 'relative', maxWidth: '100%', height: '400px' }}>
+    <div className='chart-container justify-content-center' style={{ position: 'relative', width: 'auto', height: '400px' }}>
       <Pie data={data} options={options} />
     </div>
   );
