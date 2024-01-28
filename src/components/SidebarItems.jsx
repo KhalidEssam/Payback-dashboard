@@ -61,11 +61,11 @@ return (
     {( selected.includes(title)) && options.length>0 && (
     
     <Box paddingLeft= "10%">
-        {console.log('title :'+ title)} 
+        {/* {console.log('title :'+ title)} 
         {console.log('selected :'+ selected)} 
         {console.log(selected.includes(title))}
 
-        {console.log('-------------------------------')}
+        {console.log('-------------------------------')} */}
 
         {renderOptions({
         title,

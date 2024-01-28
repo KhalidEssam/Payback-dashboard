@@ -708,7 +708,20 @@ export const mockDataContactscolumns = [
   },
 ];
 
-
+export const mockDataPages = [
+  { id: 1, NAME: "Page 1", TEMPLATE: "Template A", CREATED_AT: "2024-01-27", STATUS: "Active" },
+  { id: 2, NAME: "Page 2", TEMPLATE: "Template B", CREATED_AT: "2024-01-28", STATUS: "Inactive" },
+  { id: 3, NAME: "Page 3", TEMPLATE: "Template C", CREATED_AT: "2024-01-29", STATUS: "Active" },
+  { id: 4, NAME: "Page 4", TEMPLATE: "Template A", CREATED_AT: "2024-01-30", STATUS: "Inactive" },
+  { id: 5, NAME: "Page 5", TEMPLATE: "Template B", CREATED_AT: "2024-01-31", STATUS: "Active" },
+];
+export const mockDataPagesColumns = [
+  { field: "id", headerName: "ID" },
+  { field: "NAME", headerName: "Name", flex: 1, cellClassName: "name-column--cell" },
+  { field: "TEMPLATE", headerName: "Template", flex: 1 },
+  { field: "CREATED_AT", headerName: "Created At", flex: 1 },
+  { field: "STATUS", headerName: "Status", flex: 1 },
+];
 
 export const mockDataInvoicescolumns = [
   { field: "id", headerName: "ID" },

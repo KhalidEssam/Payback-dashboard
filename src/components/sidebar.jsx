@@ -27,12 +27,6 @@ const Sidebar = ({height ,selected, setSelected ,Rout_URL}) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
-  // const optionsData = [
-  //   // Options for 'Manage Team' item
-  //   { title: 'Manage Team Option 1', to: '/team/option1' },
-  //   { title: 'Manage Team Option 2', to: '/team/option2' },
-  //   { title: 'Manage Team Option 3', to: '/team/option3' },
-  // ]
   return (
     <Box 
       sx={{
