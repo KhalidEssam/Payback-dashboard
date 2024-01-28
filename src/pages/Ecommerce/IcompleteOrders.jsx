@@ -5,7 +5,7 @@ import MUITable from "../../components/MUITable";
 const IncompleteOrders = ({IncompleteHeader, IncompleteData}) => {
 
 return (
-<div className="container-xl">
+<div className="m-4">
 
     <div className="h1">Incomplete Orders</div>
 

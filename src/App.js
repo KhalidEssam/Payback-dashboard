@@ -39,7 +39,7 @@ import Customers from "./pages/Ecommerce/Customers";
 import Pages from "./pages/Ecommerce/SidebarPages/Pages";
 import Reports from "./pages/Marketplace/Reports";
 import SystemPage from "./pages/PlatformAdmin/Admin";
-
+import SettingsPage from "./pages/Settings/Settings";
 function App() {
   const [theme, colorMode] = useMode();
   const [isSidebar, setIsSidebar] = useState(true);
@@ -105,9 +105,10 @@ function App() {
               {/* Marketplace */}
 
               <Route path="/marketplace">
-                < Route path="reports" element={<Reports />} />
+                < Route path="reports" element={<SystemPage />} />
 
               </Route>
+              <Route path="settings" element={<SettingsPage />} />
 
               <Route path="platform-admin" element={<SystemPage />} />
 

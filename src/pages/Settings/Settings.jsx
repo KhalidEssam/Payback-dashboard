@@ -3,7 +3,7 @@ import { FaUsers, FaUsersCog, FaClipboardList, FaDatabase, FaCalendarAlt, FaBox,
 import { useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import PanelSection from '../../components/Card';
-const SystemPage = () => {
+const SettingsPage = () => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
     const items = [
@@ -84,9 +84,12 @@ const SystemPage = () => {
 return (
 <div className="container-xl">
     <PanelSection colors={colors} items={items} />
+    <PanelSection colors={colors} items={items} />
+    <PanelSection colors={colors} items={items} />
+    <PanelSection colors={colors} items={items} />
     
 </div>
 );
 };
 
-export default SystemPage;
+export default SettingsPage;
